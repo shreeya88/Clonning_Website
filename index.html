@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+{% block body %}
+<!---Now the slide show of the images-->
+<div class="container-fluid mx-0 px-0">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="height:50%;">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="/static/flip1.jpg" class="d-block w-100" alt="..." style="height:400px;" >
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="/static/flip3.webp" class="d-block w-100" alt="..." style="height:400px;">
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="/static/flip4.webp" class="d-block w-100" alt="..." style="height:400px;">
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="/static/flip5.webp" class="d-block w-100" alt="..." style="height:400px;">
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="/static/flip6.avif" class="d-block w-100" alt="..." style="height:400px;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<br>
+<h3 style="text-align: center; margin-top: 10px; color:red; letter-spacing:3px; font-weight:bold;font-size:50px;">Deals on Smartphones</h3>
+<div class="container-fluid d-flex">
+  
+  <div class="card" style="width: 18rem;">
+    <img src="/static/phn1.jpeg" class="card-img-top" alt="..." style="height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">Moto G34 5G</h5>
+      <p class="card-text">Just ₹9,999</p>
+      <a href="#" class="btn btn-primary">Features</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="/static/phn2.jpeg" class="card-img-top" alt="..." style="height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">Samsung S23 FE</h5>
+      <p class="card-text">From ₹33,999</p>
+      <a href="#" class="btn btn-primary">Features</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="/static/phn3.jpeg" class="card-img-top" alt="..." style="height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">iPhone 15</h5>
+      <p class="card-text">Just ₹64,999</p>
+      <a href="#" class="btn btn-primary">Features</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="/static/phn4.jpeg" class="card-img-top" alt="..." style="height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">POCO M6 Pro 5G</h5>
+      <p class="card-text">From 8,999</p>
+      <a href="#" class="btn btn-primary">Features</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="/static/phn5.jpeg" class="card-img-top" alt="..." style="height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">Realme 12 Pro 5G</h5>
+      <p class="card-text">From ₹23,999</p>
+      <a href="#" class="btn btn-primary">Features</a>
+    </div>
+  </div>
+</div>
+<br>
+<h4 style="margin-top: 20px; margin-left: 50px; text-align:left; color:darkmagenta; letter-spacing:3px; font-weight:bold; font-size:50px;">Top Deals on Fashion</h4>
+<div class="container-fluid d-flex" style="background-color: whitesmoke;">
+  <div class="card" style="width: 12rem; margin-right: 20px; margin-left: 55px;">
+    <img src="/static/trend1.jpeg" class="card-img-top" alt="..." style="height: 260px;">
+    <div class="card-body">
+      <h5 class="card-title">Trendy Tops, Jeans</h5>
+      <p class="card-text"><b>From ₹999 & Extra 10% Off</b></p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 14rem; margin-right: 20px;">
+    <img src="/static/trend2.jpeg" class="card-img-top" alt="..." style="height: 260px;">
+    <div class="card-body" style="margin-top: 10px;">
+      <h5 class="card-title">Trendy, Beautiful Designed Trousers</h5>
+      <p class="card-text"><b>Under ₹699</b></p>
+      <a href="#" class="btn btn-primary" style="margin-top: 15px;">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 12rem; margin-right: 20px;">
+    <img src="/static/trend3.jpeg" class="card-img-top" alt="..." height="260px">
+    <div class="card-body" style="margin-top: 10px;">
+      <h5 class="card-title">Wedding Sarees with designed Blouse</h5>
+      <p class="card-text"><b>Under ₹999</b></p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 12rem; margin-right: 20px;">
+    <img src="/static/trend4.jpeg" class="card-img-top" alt="..." style="height: 260px;">
+    <div class="card-body" style="margin-top: 10px;">
+      <h5 class="card-title">Super Offers on Kurtas</h5>
+      <p class="card-text"><b>Under ₹599</b></p>
+      <a href="#" class="btn btn-primary" style="margin-top: 10px;">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 12rem; margin-right: 20px;">
+    <img src="/static/trend5.jpeg" class="card-img-top" alt="..." style="height:260px">
+    <div class="card-body" style="margin-top: 25px;">
+      <h5 class="card-title">Wallets & Belts</h5>
+      <p class="card-text"><b>Min 70% Off</b></p>
+      <a href="#" class="btn btn-primary" style="margin-top: 15px;">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 12rem; margin-right: 20px;">
+    <img src="/static/trend6.jpeg" class="card-img-top" alt="..." style="height: 260px;">
+    <div class="card-body" style="margin-top: 15px;">
+      <h5 class="card-title">Adidas, Puma & More</h5>
+      <p class="card-text"><b>Min 50% Off</b></p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+</div>
+<br>
+<h4 style="margin-top: 20px; margin-left: 80px; text-align:right; margin-right:50px; color:green; letter-spacing:3px; font-weight:bold; font-size:50px">Electronic Gadgets</h4>
+<div class="container-fluid d-flex" style="background-color: whitesmoke;">
+  <div class="card" style="width: 12rem; margin-right: 20px; margin-left: 55px; height: 370px;">
+    <img src="/static/eg1.jpeg" class="card-img-top" alt="..." height="260px">
+    <div class="card-body">
+      <h5 class="card-title">Bluetooth Headphones</h5>
+      <p class="card-text"><b>From ₹699</b></p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 14rem; margin-right: 20px;  height: 370px;">
+    <img src="/static/eg2.jpeg" class="card-img-top" alt="..." style="height: 200px;">
+    <div class="card-body">
+      <h5 class="card-title">Calling SmartWatches</h5>
+      <p class="card-text"><b>From ₹799</b></p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 12rem; margin-right: 20px;  height: 370px;">
+    <img src="/static/eg3.jpeg" class="card-img-top" alt="..." height="260px">
+    <div class="card-body" style="margin-top: 10px;">
+      <h5 class="card-title">Gaming Consoles</h5>
+      <p class="card-text"><b>From ₹16,990*</b></p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 12rem; margin-right: 20px;  height: 370px;">
+    <img src="/static/eg4.jpeg" class="card-img-top" alt="..." style="height: 260px;">
+    <div class="card-body" style="margin-top: 10px;">
+      <h5 class="card-title">Mobile Chargers are here</h5>
+      <p class="card-text"><b>From ₹99</b></p>
+      <a href="#" class="btn btn-primary" >Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 12rem; margin-right: 20px;  height: 370px;">
+    <img src="/static/eg5.jpeg" class="card-img-top" alt="..." style="height:300px">
+    <div class="card-body">
+      <h5 class="card-title">Smart Lighting Solutions</h5>
+      <p class="card-text"><b>From ₹399</b></p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 12rem; margin-right: 20px;  height: 370px;">
+    <img src="/static/eg6.jpeg" class="card-img-top" alt="..." height="260px">
+    <div class="card-body">
+      <h5 class="card-title">Gaming Consoles</h5>
+      <p class="card-text"><b>From ₹17,990*</b></p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+  <div class="card" style="width: 12rem; margin-right: 20px;  height: 370px;">
+    <img src="/static/eg7.jpeg" class="card-img-top" alt="..." height="260px">
+    <div class="card-body">
+      <h5 class="card-title">Mobile Cables</h5>
+      <p class="card-text"><b>From ₹49</b></p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

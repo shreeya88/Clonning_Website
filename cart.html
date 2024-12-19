@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html>
+    <head></head>
+    <body>
+        {% block body %}
+        <div class="container-fluid" style="background-color:aliceblue; height: 400px; margin: 0;">
+            <div class="container" style="margin-left: 140px; margin-top: 30px; background-color: white;">
+                <center>
+                <img src="/static/cartimg.webp" style="width: 300px; height: 250px;">
+                <h5>Missing Cart Items?</h5>
+                <p>Login to see the items you added previously</p>
+                <button type="button" style="background-color: orange; border:1px solid orange; border-radius: 2px; padding: 10px 50px; margin-bottom: 10px;">
+                    <a href="/loginUser" style="text-decoration: none; color: white;">Login</a></button>
+            </center>
+            </div>
+        </div>
+        {% endblock body %}
+    </body>
+</html>

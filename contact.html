@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html>
+    <head></head>
+    <body>
+        {% block body %}
+    <div class="container">
+        <fieldset>
+            <legend style="text-align: center;">Please fill your Details to Contact Us</legend>
+            <form method="post" action="/contact" style="width: 50%; margin-left: 270px; border: 2px solid lightblue; border-radius: 25px; margin-top: 30px; background-color: lightcyan; padding: 30px;">
+            {% csrf_token %}
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label" style="text-align: left;">Name</label>
+                    <input type="text" class="form-control" id="exampleInputName" name="name" style="background-color: rgb(255,255,255)" required>
+                    <div class="form-text">We'll never share your name with anyone else.</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="exampleInputMobileNumber" class="form-label" style="text-align: left;">Phone Number</label>
+                    <input type="number" class="form-control" id="exampleInputPhoneNumber" name="phone" style="background-color: rgb(255,255,255)" required>
+                    <div class="form-text">We'll never share your phone number with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" style="background-color: rgb(255,255,255)" required>
+                    <div class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label" style="text-align: left;">Tell me about what you want to contact me</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="desc"  placeholder="Write here...." rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </fieldset>
+    </div>
+        {% endblock body %}
+    </body>
+</html>

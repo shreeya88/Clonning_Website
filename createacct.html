@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html>
+    <head></head>
+    <body>
+        {% block body %}
+        <div class="container" style="width: 100%; height: 470px;">
+            <table border="1" width="80%" height="450px" cellpadding="180" cellspacing="10" style="border-collapse: collapse; margin-top: 30px; margin-left: 120px;">
+                <tr>
+                    <td>
+                        <div class="container" style="background-color: blue; color: white; height: 450px;">
+                            <br><br>
+                           <h3>Looks Like You are new here!!!</h3>
+                           <p style="color: lightgray;">Get access to your Orders, <br>Wishlist and Recommendations</p>
+                           <br><br><br>
+                           <img src="/static/cartimg.webp" style="width: 180px; height: 150px; margin-left: 30px; border-radius: 2px;">
+                        </div>
+                    </td>
+                    <td>
+                    <div class="container" style="height: 450px;">
+                        <input type="text" placeholder="Enter your Mobile number/ Email Id" style="margin-top: 40px; margin-left: 30px;"/>
+                        <br><hr style="margin-left: 30px;">
+                        <p style="font-size: 14px; margin-left: 40px;">By Continuing, you agree to flipkart's <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy.</a> </p>                        
+                        <button style="background-color: orangered; color: white; border: 1px solid orangered; border-radius: 2px; padding: 10px 130px; margin-left: 120px;">Continue</button>
+                        <button style="background-color: white; color: blue; border: 1px solid white; border-radius: 2px; padding: 10px 130px; margin-left: 80px;"><a href="/login" style="text-align: center; text-decoration: none; font-weight: bold;">Existing User? Log in</a></button>
+                        
+                    </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        {% endblock body %}
+    </body>
+</html>
